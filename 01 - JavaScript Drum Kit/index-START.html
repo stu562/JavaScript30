@@ -58,6 +58,16 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+  window.addEventListener("keydown", function(e){
+  //listen to key
+  //when key, play that data-key file 
+    
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    console.log(audio);
+    audio.play();
+  //apply style css to make box zoom and light up 
+    //border yellow, but returns back to default back after few seconds 
+  })
 
 </script>
 
